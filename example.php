@@ -1,10 +1,13 @@
 <?php
 require 'vendor/autoload.php';
 
+use CLIFramework\Logger;
+use CurlKit\CurlAgent;
+use Soramame\SoramameAgent;
 
-$logger = new CLIFramework\Logger;
-$curlAgent = new CurlKit\CurlAgent;
-$agent = new Soramame\SoramameAgent($curlAgent, $logger);
+$logger = new Logger;
+$curlAgent = new CurlAgent;
+$agent = new SoramameAgent($curlAgent, $logger);
 
 $attributes = $agent->fetchStationAttributes();
 print_r($attributes);
