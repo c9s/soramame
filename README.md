@@ -25,7 +25,7 @@ foreach ($counties as $countyId => $countyName) {
 ## Install
 
 ```
-composer require c9s/soramame 
+composer require c9s/soramame "1.0.x-dev"
 ```
 
 ## Example
