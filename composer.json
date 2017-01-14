@@ -1,0 +1,14 @@
+{
+    "name": "c9s/soramame",
+    "require": {
+        "corneltek/curlkit": "~1",
+        "corneltek/cliframework": "~3",
+        "symfony/css-selector": "~3.2",
+        "symfony/dom-crawler": "~3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Soramame\\": ""
+        }
+    }
+}
