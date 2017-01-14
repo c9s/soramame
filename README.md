@@ -1,6 +1,16 @@
+## Install
 
+```
+composer require c9s/soramame 
+```
 
+## Development
 
+```
+composer install --prefer-source
+```
+
+## API
 
 ### SoramameAgent::fetchStationAttributes
 
