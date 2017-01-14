@@ -8,6 +8,13 @@
         "symfony/dom-crawler": "~3.2"
     },
     "extra": { "branch-alias": { "dev-master": "1.0.x-dev" } },
+    "support": {
+        "issues": "https://github.com/c9s/soramame/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        { "name": "Yo-An Lin", "email": "yoanlin93@gmail.com" }
+    ],
     "autoload": {
         "psr-4": {
             "Soramame\\": ""
