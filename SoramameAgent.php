@@ -294,7 +294,7 @@ class SoramameAgent
             $measureData = array_filter($measureData, 'is_numeric');
             $measureData = array_map('doubleval', $measureData);
             $measureData = array_merge($measureData, [
-                'published_at' => $dateTime->format(DateTime::ATOM),
+                'published_at' => $dateTime,
             ]);
             $results[] = $measureData;
         }
