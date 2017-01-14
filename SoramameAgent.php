@@ -296,9 +296,7 @@ class SoramameAgent
             $measureData = array_combine($labels, $rowContents);
             $measureData = array_filter($measureData, 'is_numeric');
             $measureData = array_map('doubleval', $measureData);
-            $measureData = array_merge($measureData, [
-                'published_at' => $dateTime,
-            ]);
+            $measureData['published_at'] = $dateTime;
             $results[] = $measureData;
         }
         return $results;
