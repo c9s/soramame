@@ -4,6 +4,10 @@
 composer require c9s/soramame 
 ```
 
+## Example
+
+Please take a look at `example.php`
+
 ## Development
 
 ```
