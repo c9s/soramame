@@ -67,28 +67,31 @@ class SoramameAgent
         return self::BASE_URL . self::PROVINCE_LIST_PAGE;
     }
 
-    public function getStationTitlePageUrl() {
+    public function getStationTitlePageUrl($time = null)
+    {
         return self::BASE_URL . 
-            str_replace(['{time}' ], [date('YmdH') ], 
+            str_replace(['{time}' ], [$time ?: date('YmdH')],
                 self::STATION_TITLE_PAGE);
     }
 
-    public function getStationListPageUrl($cityId) {
+    public function getStationListPageUrl($cityId, $time = null)
+    {
         return self::BASE_URL . 
-            str_replace([ '{city}', '{time}' ], [ $cityId, date('YmdH') ], 
+            str_replace([ '{city}', '{time}' ], [ $cityId, $time ?: date('YmdH') ], 
                 self::STATION_LIST_PAGE);
     }
 
-    public function getMeasurementTitlePageUrl($code) {
+    public function getMeasurementTitlePageUrl($code, $time = null)
+    {
         return self::BASE_URL . 
-            str_replace([ '{code}', '{time}' ], [ $code, date('YmdH') ], 
+            str_replace([ '{code}', '{time}' ], [ $code, $time ?: date('YmdH') ], 
                 self::MEASUREMENT_TITLE_PAGE);
     }
 
-    public function getMeasurementDataPageUrl($code)
+    public function getMeasurementDataPageUrl($code, $time = null)
     {
         return self::BASE_URL . 
-            str_replace([ '{code}', '{time}' ], [ $code, date('YmdH') ], 
+            str_replace([ '{code}', '{time}' ], [ $code, $time ?: date('YmdH') ], 
                 self::MEASUREMENT_DATA_PAGE);
     }
 
