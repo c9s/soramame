@@ -1,6 +1,7 @@
 {
     "name": "c9s/soramame",
     "require": {
+        "php": ">=5.4.0",
         "corneltek/curlkit": "~1",
         "corneltek/cliframework": "~3",
         "symfony/css-selector": "~3.2",
